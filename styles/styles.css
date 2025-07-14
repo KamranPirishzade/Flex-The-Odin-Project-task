@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto" ,sans-serif;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 8rem;
+    align-items: center;
+    background-color: #1f2937;
+}
+
+header nav ul{
+    list-style: none;
+    padding: none;
+    display: flex;
+    gap: 1.3rem;
+}
+
+header nav ul a{
+    color: #e5e7eb;
+    font-size: 18px;
+    text-decoration: none;
+    position: relative;
+    letter-spacing: 1.4px;
+}
+
+header nav ul a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 0px;
+    background-color: #e5e7eb;
+    transition: width .3s ease;
+}
+
+header nav ul a:hover::after{
+    width: 100%;
+}
+
+.logo img{
+    transform: scale(2);
+}
+
